@@ -37,13 +37,17 @@ Legumes: [{
        // O "item" é o rastreador do MAP que está trazendo para a gente todas as informações dentro do Array
        //utilizamos o "item" para retornar as informações pra gente 
         <div>
-        <h1>HORTIFRUITI</h1>
-            {this.state.Legumes.map((item)=>(
+        <h1 className="Título1">HORTIFRUITI</h1>
+        <h2 className="Título2">NOSSOS PRODUTOS</h2>
+        <section>
+        {this.state.Legumes.map((item)=>(
          <div>
 
-         <img src={item.Fruta}/> 
+         <img alt="Fruta" src={item.Fruta}/> 
           </div>  
             ))} 
+        </section>
+           
         
            
             
